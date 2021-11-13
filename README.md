@@ -1,9 +1,9 @@
-### [Car](https://assignment-12-eb15b.web.app/)
+### [Bike]( https://projects-12-b9232.web.app/)
 
 
 ### About This Site:
 
-- [x] This is a Responsive MERN-Stack web applications for car site.
+- [x] This is a Responsive MERN-Stack web applications for Bike site.
 - [x] In this site user can take our service, see his order list & reviews our site.
 - [x] If user want any services he must be authenticate with google or facebook.
 - [x] In this site i implement stripe payment gateway. Without payment he/she can't take our service.
