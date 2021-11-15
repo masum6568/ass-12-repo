@@ -10,26 +10,8 @@
   font-weight: 600;
 }
 
-.animate-border {
-  position: relative;
-  display: block;
-  width: 115px;
-  height: 5px;
-  background: #023a42dc;
-}
 
-.animate-border:after {
-  position: absolute;
-  content: "";
-  width: 35px;
-  height: 5px;
-  left: 0;
-  bottom: 0;
-  border-left: 10px solid rgb(197, 199, 228);
-  border-right: 10px solid rgb(197, 199, 228);
-  -webkit-animation: animborder 2s linear infinite;
-  animation: animborder 2s linear infinite;
-}
+
 
 @-webkit-keyframes animborder {
   0% {
@@ -42,16 +24,7 @@
   }
 }
 
-@keyframes animborder {
-  0% {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(81px);
-    transform: translateX(81px);
-  }
-}
+
 
 .animate-border.border-white:after {
   border-color: #fff;

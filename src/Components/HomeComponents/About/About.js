@@ -10,18 +10,17 @@ const About = () => {
         <section className="about-container">
             <Container>
                 <Row className="align-items-center justify-content-center banner">
-                        <Col md={6}>
-                     <Fade left>
-                            <Image className="img-fluid" src={about} alt="..." />
-                            </Fade>
-                        </Col>
                     <Col md={6}>
-                    <Fade right>
-                        <h6 className="text-info">About Us</h6>
-                        <h3>Why Choose Us For ?</h3>
-                        <span className="animate-border border-black"></span>
-                        <p className="text-muted mt-2"> <small>The inspection and subsequent rectification will be carried out free of cost for all new generation Scorpio and NuvoSport customers, who will be individually contacted by the company,” the company said in a regulatory filing to the BSE.  </small> </p>
-                        <motion.button whileHover={{scale:1.1, textShadow:'0px 0px 8px rgb(255 255 255)', boxShadow:'0px 0px 8px #17a2b8', transition:{duration:0.4, yoyo:'Infinity'}}} className='main-button'>Learn More</motion.button>
+                        <Fade left>
+                            <Image className="img-fluid" src={about} alt="..." />
+                        </Fade>
+                    </Col>
+                    <Col md={6}>
+                        <Fade right>
+                            <h6 className="text-info">About Us</h6>
+                            <h3>Why Choose Us For ?</h3>
+                            <span className="animate-border border-black"></span>
+                            <p className="text-muted mt-2"> <small>Social media is a platform that is using by billions of people in a day. This is the way of expressing your mood and uploading the status. So everyone is trying to update regularly updating their status to connecting their contacts.  </small> </p>
                         </Fade>
                     </Col>
                 </Row>

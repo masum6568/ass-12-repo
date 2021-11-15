@@ -22,7 +22,7 @@ const Services = () => {
         <section className="services" id='service'>
             <Container>
                 {/* <h5>What We Do</h5> */}
-                <h3>Special Baike</h3>
+                <h3>Super Bike</h3>
                 <Row className="mt-5 justify-content-center">
                     {
                         services.length > 0 ?
