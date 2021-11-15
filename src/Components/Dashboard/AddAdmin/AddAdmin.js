@@ -11,7 +11,7 @@ const AddAdmin = () => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
-        if (email === "admin@test.gmail") {
+        if (email === "write@admin.gmail") {
             return swal("Permission restriction!", "As a test-admin, you don't have this permission.", "info");
         }
         const loading = toast.loading('Adding...Please wait!');

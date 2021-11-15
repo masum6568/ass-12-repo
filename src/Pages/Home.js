@@ -1,6 +1,5 @@
 import React from 'react';
 import About from '../Components/HomeComponents/About/About';
-import Copyright from '../Components/HomeComponents/Footer/Copyright';
 import Footer from '../Components/HomeComponents/Footer/Footer';
 import Header from '../Components/HomeComponents/Header/Header';
 // import LatestNews from '../Components/HomeComponents/LatestNews/LatestNews';
@@ -20,7 +19,7 @@ const Home = () => {
             {/* <LatestNews /> */}
             <Testimonials />
             <Footer />
-            <Copyright/>
+
         </main>
     );
 };

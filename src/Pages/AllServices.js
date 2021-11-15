@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import toast from 'react-hot-toast';
-// import spinner from '../../../images/service-loder.gif';
 import './AllServices.css';
 import NavBar from './../Components/HomeComponents/NavBar/NavBar';
 import ServiceDetail from '../Components/HomeComponents/ServiceDetail/ServiceDetail';

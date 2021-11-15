@@ -22,7 +22,7 @@ const AllAdmin = () => {
     }, [])
 
     const handleDeleteReview = (id) => {
-        if (email === "admin@test.gmail") {
+        if (email === "write@admin.com") {
             return swal("Permission restriction!", "As a test-admin, you don't have this permission.", "info");
         }
 

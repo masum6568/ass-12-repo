@@ -17,8 +17,8 @@ const About = () => {
                     </Col>
                     <Col md={6}>
                         <Fade right>
-                            <h6 className="text-info">About Us</h6>
-                            <h3>Why Choose Us For ?</h3>
+
+
                             <span className="animate-border border-black"></span>
                             <p className="text-muted mt-2"> <small>Social media is a platform that is using by billions of people in a day. This is the way of expressing your mood and uploading the status. So everyone is trying to update regularly updating their status to connecting their contacts.  </small> </p>
                         </Fade>

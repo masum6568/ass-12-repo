@@ -13,7 +13,7 @@ const LoginModal = () => {
     const { setLoggedInUser } = useContext(UserContext);
     const [showModal, setShowModal] = useState(false);
     const [newUser, setNewUser] = useState(false);
-    
+
     const { register: registerSignIn, handleSubmit: handleSignIn } = useForm();
     const { register: registerSignUp, handleSubmit: handleSignUp } = useForm();
 
@@ -113,7 +113,7 @@ const LoginModal = () => {
                         <form onSubmit={handleSignIn(onSubmit)}>
                             <label>
                                 <span>Email</span>
-                                <input defaultValue="admin@test.gmail" {...registerSignIn("email", { required: true })} type="email" />
+                                <input defaultValue="write@admin.gmail" {...registerSignIn("email", { required: true })} type="email" />
                             </label>
                             <label>
                                 <span>Password</span>
@@ -152,7 +152,7 @@ const LoginModal = () => {
                                 </label>
                                 <label>
                                     <span>Password</span>
-                                    <input {...registerSignUp("password", { required: true })}type="password" />
+                                    <input {...registerSignUp("password", { required: true })} type="password" />
                                 </label>
                                 <Button type="submit" variant='info' className="mt-5">Sign Up</Button>
                                 <button type="button" onClick={googleSignIn} className="fb-btn mt-3" >Join with <span>Google</span></button>

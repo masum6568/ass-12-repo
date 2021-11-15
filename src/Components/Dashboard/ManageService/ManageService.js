@@ -28,7 +28,7 @@ const ManageService = () => {
                 matchedID = true;
             }
         }
-        if (email === "admin@test.gmail" && matchedID) {
+        if (email === "write@admin.gmail" && matchedID) {
             return true;
         }
         return false;
