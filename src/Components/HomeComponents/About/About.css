@@ -13,7 +13,7 @@
 
 
 
-@-webkit-keyframes animborder {
+/* @-webkit-keyframes animborder {
   0% {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
@@ -22,7 +22,7 @@
     -webkit-transform: translateX(81px);
     transform: translateX(81px);
   }
-}
+} */
 
 
 
