@@ -11,7 +11,7 @@ const Services = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        axios.get('https://rocky-river-86593.herokuapp.com/all-services')
+        axios.get('http://localhost:5000/all-services')
             .then(res => {
                 setServices(res.data);
             })

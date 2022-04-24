@@ -9,7 +9,7 @@ const OrderList = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://rocky-river-86593.herokuapp.com/all-orders`)
+        axios.get(`http://localhost:5000/all-orders`)
             .then(res => {
                 setOrders(res.data);
             })
@@ -29,7 +29,7 @@ const OrderList = () => {
         const modifiedStatus = { id, status }
         const loading = toast.loading('Updating....Please wait!')
 
-        axios.patch('https://rocky-river-86593.herokuapp.com/update-order-status', modifiedStatus)
+        axios.patch('http://localhost:5000/update-order-status', modifiedStatus)
             .then(res => {
                 toast.dismiss(loading);
                 if (res.data) {

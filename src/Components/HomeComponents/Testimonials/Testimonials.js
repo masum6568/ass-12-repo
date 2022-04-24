@@ -13,7 +13,7 @@ const Testimonials = () => {
     const [testimonials, setTestimonials] = useState([]);
 
     useEffect(() => {
-        fetch('https://rocky-river-86593.herokuapp.com/all-review')
+        fetch('http://localhost:5000/all-review')
             .then(res => res.json())
             .then(data => setTestimonials(data))
             .catch(error => toast.error(error.message))

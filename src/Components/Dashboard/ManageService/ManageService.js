@@ -13,7 +13,7 @@ const ManageService = () => {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        axios.get('https://rocky-river-86593.herokuapp.com/all-services')
+        axios.get('http://localhost:5000/all-services')
             .then(res => {
                 setServices(res.data);
             })
@@ -57,7 +57,7 @@ const ManageService = () => {
             if (wantDelete) {
                 const loading = toast.loading('Deleting...Please wait!');
                 const removedServices = services.filter(item => item._id !== id);
-                axios.delete(`https://rocky-river-86593.herokuapp.com/service-delete/${id}`)
+                axios.delete(`http://localhost:5000/service-delete/${id}`)
                     .then(res => {
                         toast.dismiss(loading);
                         if (res.data) {

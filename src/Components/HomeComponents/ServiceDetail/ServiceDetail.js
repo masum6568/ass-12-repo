@@ -11,6 +11,7 @@ import './ServiceDetail.css';
 const ServiceDetail = ({ service }) => {
     const { setSelectedService } = useContext(UserContext);
     const { name, image, description, price } = service;
+    console.log(service)
 
     return (
         <Col lg={4} md={6} className="mt-5">

@@ -14,7 +14,7 @@ const AllReview = () => {
 
 
     useEffect(() => {
-        axios.get('https://rocky-river-86593.herokuapp.com/all-review')
+        axios.get('http://localhost:5000/all-review')
             .then(res => {
                 setReviews(res.data);
             })
@@ -36,7 +36,7 @@ const AllReview = () => {
             if (wantDelete) {
                 const loading = toast.loading('Deleting...Please wait!');
                 const removedReviews = reviews.filter(item => item._id !== id);
-                axios.delete(`https://rocky-river-86593.herokuapp.com/delete-review/${id}`)
+                axios.delete(`http://localhost:5000/delete-review/${id}`)
                     .then(res => {
                         toast.dismiss(loading);
                         if (res.data) {

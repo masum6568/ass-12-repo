@@ -24,7 +24,7 @@ const AddServices = () => {
 
         const loading = toast.loading('Adding...Please wait!');
 
-        const url = 'https://rocky-river-86593.herokuapp.com/add-services'
+        const url = 'http://localhost:5000/add-services'
         fetch(url, {
             method: 'POST',
             headers: {

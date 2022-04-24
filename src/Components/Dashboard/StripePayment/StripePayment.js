@@ -66,7 +66,7 @@ const StripePayment = ({ orders }) => {
             time: new Date().toDateString('dd/mm/yyyy')
         };
 
-        fetch('https://rocky-river-86593.herokuapp.com/add-order', {
+        fetch('http://localhost:5000/add-order', {
             method: 'POST',
             headers: { 'Content-Type': 'Application/json' },
             body: JSON.stringify(bookingInfo)

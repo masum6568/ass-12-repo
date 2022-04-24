@@ -22,7 +22,7 @@ const Book = () => {
     const orders = services.find(service => service.name === selectedOption.value);
 
     useEffect(() => {
-        axios.get('https://rocky-river-86593.herokuapp.com/all-services')
+        axios.get('http://localhost:5000/all-services')
             .then(res => setServices(res.data))
             .catch(error => toast.error(error.message))
     }, [])

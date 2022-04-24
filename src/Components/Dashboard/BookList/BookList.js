@@ -30,7 +30,7 @@ const BookList = () => {
 
 
     useEffect(() => {
-        axios.get('https://rocky-river-86593.herokuapp.com/orderedByEmail?email=' + loggedInUser.email)
+        axios.get('http://localhost:5000/orderedByEmail?email=' + loggedInUser.email)
             .then(res => {
                 setOrders(res.data);
             })
@@ -52,7 +52,7 @@ const BookList = () => {
             if (wantDelete) {
                 const loading = toast.loading('Deleting...Please wait!');
                 const removedServices = orders.filter(item => item._id !== id);
-                axios.delete(`https://rocky-river-86593.herokuapp.com/cancel-order/${id}`)
+                axios.delete(`http://localhost:5000/cancel-order/${id}`)
                     .then(res => {
                         toast.dismiss(loading);
                         if (res.data) {
